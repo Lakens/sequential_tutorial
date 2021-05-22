@@ -36,7 +36,7 @@ linenumbers       : no
 mask              : no
 draft             : no
 figsintext        : yes
-class             : "jou, a4paper"
+class             : "man"
 output            : papaja::apa6_pdf
 link-citations    : true
 editor_options: 

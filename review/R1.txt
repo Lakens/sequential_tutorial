@@ -1,0 +1,68 @@
+CC: steinleyd@missouri.edu
+MET-2021-0656
+Group Sequential Designs: A Tutorial
+Psychological Methods
+
+Dear Dr. Lakens,
+
+Thank you very much for submitting your manuscript Group Sequential Designs: A Tutorial (MET-2021-0656)
+for review and consideration for publication in Psychological Methods. I sincerely appreciate the opportunity to review the manuscript. I have now received the reviews of your manuscript and am able to make an editorial decision at this time.
+
+Reviewers have now commented on your paper. You will see that they are advising that you revise your manuscript. For your guidance, reviewers' comments are appended below.
+
+
+
+If you decide to revise the work, please submit a list of changes or a rebuttal against each point which is being raised when you submit the revised manuscript.
+
+If you have not already done so as part of your Author Note, please provide the details (2-4 sentences) of prior dissemination of the ideas and data appearing in the manuscript (e.g., if some or all of the data and ideas in the manuscript were presented at a conference or meeting posted on a listserv, shared on a website, etc.).
+
+We request that your revision arrive by 05/21/2021. If for some reason you find that you cannot meet this deadline, please contact us as soon as possible in order to make other arrangements.
+
+To submit a revision, go to https://www.editorialmanager.com/met/ and log in as an Author. You will see a menu item called Submission Needing Revision. You will find your submission record there.
+
+Sincerely,
+Douglas Steinley
+Editor
+Psychological Methods
+
+APA asks that authors please take a moment to give us your feedback on the peer review process as you experienced it, by completing a short survey, available at
+http://goo.gl/forms/qzKP6Zkqx9.
+
+Reviewers' comments:
+
+Reviewer #1: The authors discuss the use of group sequential designs in psychological research, focusing on study designs where two group means are compared (e.g., t-tests). The authors argue that group sequential designs are more flexible and efficient than fixed sample size design—the current norm—and provide information introducing readers to group sequential designs, complete with a R package/ Shiny app, rpact. In my view, the concluding paragraph of this manuscript nicely captures the value of a tutorial like this. Ideally, a tutorial like this would introduce the group sequential designs clearly, discuss research scenarios in which such designs are beneficial (and explain how they are beneficial), provide reader-friendly guidance to a user-friendly tool, and summarize relevant information with clear priority (i.e., what is important to know for what scenarios) and organization. I don't think this tutorial, in its current form, meets this ideal yet, but I believe it can. To that end, I offer my thoughts and suggestions on potential areas of improvement, noting areas of strength along the way.
+
+My overarching impression of this tutorial is that it is heavy on information but light on reader-friendly organization. It is unclear how the sections are related logically, especially from the perspective of a reader who wishes to implement these group sequential designs. What information do I need, and what should my considerations be? The scenarios offer the most intuitive point of entry, but even those scenarios lack crucial information (see further discussion of this point below). In my mind, the usefulness of a tutorial, more than any other type of paper, depends on its accessibility and clarity. I note major areas that could use more accessibility or clarity below:
+
+- One of the key contributions of the tutorial seems to be the introduction of the R package rpact and its accompanying Shiny app. This is highlighted in the abstract twice and in the introduction of the paper. But the actual discussion of the package and the app (beyond just a mention of its name), as far as I can tell, spans one paragraph and three screenshots in the entire manuscript (pp. 6-8), and explanation is lacking (e.g., What do "cumulative alpha spent" and "two-sided local significance level" mean in Figure 2? How do I use it?). On some level, I understand that the authors wish to leave the technical details of the package and app use to the online resource. But it also means readers of this tutorial will not actually learn enough to be able to plan or run group sequential designs. I wonder if the authors can strike a balance between information in this tutorial and information in the online vignettes. One approach is to incorporate discussion of the software throughout the tutorial: For example, after the section on comparing different corrections, the authors may wish to describe how such differences are apparent in the output of the package/app and how users can choose among those corrections in the app. Another approach is to introduce the package/app at different levels: The manuscript can describe the use and functionality at a more conceptual, navigational level, stating what rpact enables researchers to do, what information researchers need to use rpact, and how rpact can be incorporated into the research pipeline. The online vignettes and manuals, in contrast, can focus on the technical aspect of app usage, such as specific action sequences (e.g., clicking buttons, entering numbers) and supplemental information. This way, readers could walk away from this tutorial with a clearer sense of what they could do.
+
+- The manuscript introduces several considerations that seem central to its contribution but are actually insufficiently discussed. For example, one of the biggest advantages of the alpha spending function, as the authors argued multiple times, is that the number of looks does not need to be specified ahead of time (abstract, p. 11); the authors explicitly pointed out previous claims that suggested the contrary. But the tutorial offers almost no guidance on what to actually do if the number of looks is not specified ahead of time, referring readers only to a book chapter (p. 14). Why not discuss it? I would love to see a more practical discussion of what to do with flexible number of looks in the tutorial and in the R package/app. If that is beyond the scope of the tutorial, the authors should adjust readers' expectations early and make clear that although the alpha spending function can accommodate flexible number of looks, the tutorial does not cover it.
+
+- Another discussion that seems lacking is on how to adjust effect sizes (mean differences) and p-values. Again, the authors wrote in the abstract that the tutorial would discuss "how to report adjusted effect size estimates and confidence intervals." But the discussion merely compared the relative merits of reporting adjusted versus unadjusted effect sizes, p-values, and CIs (pp. 26-29), without informing readers just what those adjustments are. For example, regarding CIs, the authors wrote, "Given the direct relationship between a p value and a confidence interval, confidence intervals for sequential designs have also been developed," before moving onto repeated CIs, a presumably related but different concept. But what are these confidence intervals for sequential designs? Are they adjusted or not? What does the adjustment do, exactly? How do researchers calculate them? Regarding the last question, the authors noted that "adjusted p values and confidence intervals can usually be computed with existing software packages for sequential analyses" (p. 28). What are these existing software packages? Is rpact one of them? If so, the authors should at least briefly describe where researchers can find these adjusted values (I tried to find them in the Shiny app outputs but could not).
+
+There are other more minor examples, which I note in the Minor Comments section below. But I hope these examples illustrate the issues with organization and clarity that I see in this tutorial, which boils down to lack of balance in information: Some information, such as the numeric details of the corrections and alpha spending functions, could be condensed, whereas other information, such as the few pieces noted above, is conspicuously lacking. Addressing this lack of balance will greatly improve the usefulness of the tutorial.
+
+Along those lines, I also encourage the authors to consider presentation modalities that help organize and condense information. These modalities include: information boxes that summarize key concepts and inputs needed for group sequential designs, a list of concrete recommendations, a flowchart of actions with different paths that researchers could take, a step-by-step guide of using rpact at a conceptual level (see comment above), and a table that summarizes and compares different corrections and alpha spending functions. The authors are not obliged to include all or even most of these modalities, but they can be effective in a tutorial like this.
+
+I generally like the Shiny app. It is relatively straightforward to use and takes advantage of the reactivity of the Shiny infrastructure to provide live updates of R command, outputs, and plots. The layout looks nice, and the inclusion of tooltips is helpful. One thing to note is that the app seems to have been overhauled during my review, and I can no longer access the previous version that I based part of this review on. It is not a big problem, but it does make the already sparse description of the app in the manuscript even less relevant. Again, I reiterate my recommendation that the authors better incorporate discussion of the R package and Shiny app into the tutorial, even if the package / app is updated in the future.
+
+
+Minor Comments:
+
+- The rpact package/app seems to overlap quite a bit with the functionality of the app reported in Lakens and Evers (2014, Perspectives on Psychological Science). Perhaps the authors want to acknowledge their past work and discuss how rpact extends beyond it. One feature I noticed is that users can now flexibly specify the amount of information at each look; I am sure there are other features that are worth discussing.
+
+- p. 8: "Here, a higher threshold for early looks is foreseen, but the final look occurs quite close to the uncorrected alpha level…" Higher threshold actually means numerically lower alpha (i.e., a stricter threshold), right? If so, they authors should clarify to avoid confusion.
+
+- p. 12: The authors might want to clarify the relation between corrections and spending functions. Until I read the Figure 5 note, I had been under the impression that spending functions are independent from the corrections based on the authors' descriptions.
+
+- p. 15: In the continuing paragraph on this page, the authors state that "one might start to worry that an effect of 0.5 is not likely." I might be misunderstanding the logic of this statement, but I do not see how that conclusion follows from comparing condition power estimates, given that both estimates come from assumed population effect sizes. I wonder if the authors meant that the population effect of 0.5 is unlikely because the point estimate of 0.1 from N = 64 seems far from 0.5? But wouldn't the (adjusted) confidence interval give us a better sense of that probability?
+
+- p. 18: First two lines on this page: Why does stopping for futility controls, rather than inflates, the probability of making a type II error in the long run? This point needs more explanation.
+
+- p. 20: The authors might want to explain the visual elements of Figure 8 a bit more.
+
+- p. 23: Sample sizes at any given look should be integers, so the authors might want to present Figure 9 with realistic values on the x-axis.
+
+- p. 25: I wonder if the authors can integrate Figures 10 and 11 into one figure or find other ways of visualizing the information. On this and the following pages, the authors ask readers to compare across the two figures, but doing so is challenging.
+
+- p. 30: How to find inflation factor values? As the authors suggested, this information would be quite useful for many designs common in psychology, so it seems to warrant more discussion or at least reference to other papers for interested readers.
